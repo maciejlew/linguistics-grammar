@@ -8,7 +8,7 @@ namespace LionNet\Linguistics\Grammar;
  * @author Maciej Lew <maciej.lew@lion.net.pl>
  * @package linguistics-grammar
  */
-class Word
+class Word implements PhrasePart
 {
     
     private $string;
@@ -29,6 +29,11 @@ class Word
     public function getString()
     {
         return $this->string;
+    }
+    
+    public function getWords()
+    {
+        return array($this);
     }
     
     /**

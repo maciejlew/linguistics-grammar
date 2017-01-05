@@ -59,4 +59,10 @@ class WordTest extends \PHPUnit_Framework_TestCase
         new Word($string);
     }
     
+    public function testWordAskedForWordsReturnsItself()
+    {
+        $word = new Word('lion');
+        $this->assertEquals($word, $word->getWords()[0]);
+    }
+    
 }
