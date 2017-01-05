@@ -1,6 +1,6 @@
 <?php
 
-namespace LionNet\Linguistics\Grammar\Word\Tests;
+namespace LionNet\Linguistics\Grammar\Tests;
 use LionNet\Linguistics\Grammar\Word as Word;
 
 /**
