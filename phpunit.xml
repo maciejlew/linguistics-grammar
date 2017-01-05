@@ -14,4 +14,16 @@
             <directory suffix=".php">./tests/</directory>
         </testsuite>
     </testsuites>
+    
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src/</directory>
+        </whitelist>
+    </filter>
+    
+    <logging>
+        <log type="coverage-clover" target="/tmp/coverage.xml"/>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+    </logging>
+    
 </phpunit>
